@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Generate Box Shadow</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-200 text-slate-950">
+    <!-- Heading -->
+
+    <h1 class="mainHeading text-7xl text-center mt-[6vh] md:mb-6 font-medium">
+      Generate QR Code
+    </h1>
+
+    <!-- Toggle Butto -->
+    <button
+      id="darkModeToggleId"
+      class="darkModeToggle xl:absolute lg:absolute md:static"
+    >
+      <i class="fas fa-sun" id="darkModeIcon"></i>
+    </button>
+
+    <!-- Container -->
+    <div class="flex-container flex justify-center mb-[15vh] mt-[7vh] max-h-[90vh] sm:max-h-[115vh] md:max-h-[100vh]  lg:pb-10">
+      <div class="container rounded-lg max-w-[600px]">
+        
+          <div class="inputfield text-2xl flex flex-col justify-between ">
+            <label for="input-text">Enter your test or URL </label>
+            <input type="text" class="input-Data-Text my-6 p-2 text-xl" id="input-text" />
+          </div>
+
+          <div class="result flex justify-center">
+            <div id="img-box" class="">
+             <img src="" alt="" id="result-QR">
+            </div>
+          </div>
+
+          <div class="QR-Generate-div">
+          
+            <button onclick="generateQR()">Generate QR</button>
+          </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer text-center p-3 text-dark shadow-2xl shadow-slate-950">
+      Designed and developed by
+      <a href="https://github.com/diptiprasadsarangi01" class="hover:underline">Deep</a>
+      <br />
+      &copy;2024|Code.
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
